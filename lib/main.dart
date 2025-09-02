@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
           title: const Text('PRAKTIKUM MOBILE LANJUT'),
         ),
         body: const Text(
-          'HALLO NAMA SAYA RIRI',
+          'HALLO NAMA SAYA FAJRIYAH',
           textAlign: TextAlign.center,
         ),
       )
