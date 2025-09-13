@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+// import 'package:myapp/column_widget.dart';
+// import 'package:myapp/row_widget.dart';
+import 'package:myapp/basic_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -7,24 +10,15 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Praktikum Mobile Lanjut', // hilangkan banner debug
       theme: ThemeData(
-      
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
       ),
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('PRAKTIKUM MOBILE LANJUT'),
-        ),
-        body: const Text(
-          'HALLO NAMA SAYA FAJRIYAH',
-          textAlign: TextAlign.center,
-        ),
-      )
+      home: const BasicWidget(), // pastikan class BasicWidget ada
     );
   }
-} 
+}
